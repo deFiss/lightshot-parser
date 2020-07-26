@@ -22,9 +22,6 @@ def parse():
             token += random.choice(symbol_list)
 
         resp = session.get('https://prnt.sc/{}'.format(token))
-
-        with open('res.html', 'w') as file:
-            file.write(resp.text)
         
         parsher = BeautifulSoup(resp.text, "html.parser")
 
