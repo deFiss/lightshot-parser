@@ -25,7 +25,13 @@ def parse():
         
         parsher = BeautifulSoup(resp.text, "html.parser")
 
-        image_url = parsher.find('meta', attrs= {'property': 'og:image'})['content']
+        image_url = parsher.find('meta', attrs= {'property': 'og:image'})
+
+        if not image_url:
+            print(f'{col.RED}[+] Cloudflare block')
+            continue     
+
+        image_url = image_url['content']
 
         if 'http' not in image_url:
             print(f'{col.RED}[+] {col.LIGHTGREEN_EX}Nothing found by token {col.BLUE}{token}')
