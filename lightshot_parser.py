@@ -23,9 +23,9 @@ def parse():
 
         resp = session.get('https://prnt.sc/{}'.format(token))
         
-        parsher = BeautifulSoup(resp.text, "html.parser")
+        parser = BeautifulSoup(resp.text, "html.parser")
 
-        image_url = parsher.find('meta', attrs= {'property': 'og:image'})
+        image_url = parser.find('meta', attrs= {'property': 'og:image'})
 
         if not image_url:
             print(f'{col.RED}[+] Cloudflare block')

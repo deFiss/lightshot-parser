@@ -21,11 +21,11 @@ $ sudo pip install -r requirements.txt
 ### Launch
 
 ```sh
-$ python lightshot_pasher.py [process count]
+$ python lightshot_parser.py [process count]
 
 # or
 
-$ python lightshot_pasher.py
+$ python lightshot_parser.py
 
 # to enter the number of processes manually
 ```
