@@ -1,5 +1,7 @@
 # lightshot-parser
 
+![lightshot-parser](https://imgur.com/IL1nqYR.png "screenshot")​
+
 lightshot-parser is a multi-process script for automatically downloading screenshots from https://prnt.sc, written in python
 
 
