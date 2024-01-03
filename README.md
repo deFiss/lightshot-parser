@@ -15,7 +15,7 @@ $ git clone https://github.com/deFiss/lightshot-parser.git
 $ cd lightshot-parser
 
 # Install dependencies (if "pip" is missing, try using "pip3")
-$ sudo pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ### Launch
